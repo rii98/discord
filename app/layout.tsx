@@ -29,8 +29,10 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
-            <UserButton afterSignOutUrl="/" />
-            <ThemeToggleButton />
+            <div className="flex gap-4 items-center absolute top-4 right-4">
+              <UserButton afterSignOutUrl="/" />
+              <ThemeToggleButton />
+            </div>
           </ThemeProvider>
         </body>
       </html>
