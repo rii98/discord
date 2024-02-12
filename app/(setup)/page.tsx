@@ -2,7 +2,7 @@ import { setupProfile } from "@/lib/initial-profile";
 import prisma from "@/lib/db";
 import React from "react";
 import { redirect } from "next/navigation";
-import InitialDialog from "@/components/modals/initial-modal";
+import InititalModal from "@/components/modals/initial-modal";
 
 async function HomePage() {
   const profile = await setupProfile();
@@ -21,7 +21,7 @@ async function HomePage() {
   }
   return (
     <div>
-      <InitialDialog />
+      <InititalModal />
     </div>
   );
 }
